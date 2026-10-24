@@ -1,0 +1,187 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Maritime Law 2 Flashcards</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Anuphan:wght@400;500;600&display=swap">
+<style>
+/* Layout: one card at a time, section chips above, controls below — like a deck on a chart table */
+:root{
+  --bg:#eef2f4; --surface:#ffffff; --back:#0f2a3d; --back-fg:#e9f1f5;
+  --fg:#13222e; --muted:#5b6d79; --line:#d3dce2; --accent:#e0a100; --accent-fg:#1b1400;
+  --display:"Chakra Petch","Anuphan",system-ui,sans-serif;
+  --body:"Anuphan","Noto Sans Thai",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0b1720; --surface:#132430; --back:#e8eef2; --back-fg:#0f2230;
+  --fg:#e3ecf1; --muted:#8fa4b2; --line:#24394a; --accent:#f2b92b; --accent-fg:#1b1400; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0b1720; --surface:#132430; --back:#e8eef2; --back-fg:#0f2230;
+  --fg:#e3ecf1; --muted:#8fa4b2; --line:#24394a; --accent:#f2b92b; --accent-fg:#1b1400; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:720px;margin:0 auto;padding-block:28px 40px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:20px}
+header{display:flex;flex-direction:column;gap:4px}
+.eyebrow{font-family:var(--display);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(26px,5vw,34px);line-height:1.2;margin:0;text-wrap:balance}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--surface);color:var(--fg);
+  padding:6px 12px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-fg);font-weight:600}
+.chip:focus-visible,.btn:focus-visible,.card:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.meta{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.bar{height:4px;background:var(--line);border-radius:4px;overflow:hidden}
+.bar span{display:block;height:100%;background:var(--accent);transition:width .25s}
+.scene{perspective:1400px}
+.card{position:relative;min-height:320px;cursor:pointer;transform-style:preserve-3d;transition:transform .5s ease;border-radius:14px}
+.card.flipped{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:14px;
+  padding:28px 24px;display:flex;flex-direction:column;gap:14px;overflow:auto}
+.front{background:var(--surface);border:1px solid var(--line)}
+.back{background:var(--back);color:var(--back-fg);transform:rotateY(180deg)}
+.tag{font-family:var(--display);font-size:13px;letter-spacing:.08em;color:var(--muted)}
+.back .tag{color:inherit;opacity:.7}
+.q{font-family:var(--display);font-weight:600;font-size:clamp(20px,4.2vw,25px);line-height:1.4;margin:auto 0;text-wrap:balance}
+.a{font-size:17px;margin:0}
+.a ul{margin:0;padding-left:1.2em}
+.a li+li{margin-top:4px}
+.mem{margin-top:auto;font-size:15px;border-top:1px solid currentColor;padding-top:10px;opacity:.9}
+.hint{font-size:13px;color:var(--muted);margin-top:auto}
+.controls{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center}
+.btn{font:inherit;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--fg);
+  padding:12px 16px;border-radius:10px;cursor:pointer;min-height:48px}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-fg)}
+.btn:disabled{opacity:.4;cursor:default}
+.controls .btn:first-child{justify-self:start}.controls .btn:last-child{justify-self:end}
+.tools{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.tools .btn{font-weight:500;font-size:14px;min-height:40px;padding:8px 14px}
+footer{font-size:13px;color:var(--muted);text-align:center}
+@media (prefers-reduced-motion: reduce){.card{transition:none}.bar span{transition:none}}
+@media (max-width:420px){.card{min-height:380px}}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Final Examination · 35 คะแนน</span>
+    <h1>แฟลชการ์ด Maritime Law 2</h1>
+  </header>
+
+  <div class="chips" id="chips" role="group" aria-label="เลือกส่วน"></div>
+
+  <div class="meta"><span id="count"></span><span id="section"></span></div>
+  <div class="bar"><span id="progress"></span></div>
+
+  <div class="scene">
+    <div class="card" id="card" tabindex="0" role="button" aria-label="แตะเพื่อพลิกการ์ด">
+      <div class="face front">
+        <span class="tag" id="ftag"></span>
+        <p class="q" id="q"></p>
+        <span class="hint">แตะการ์ดหรือกด Space เพื่อดูคำตอบ</span>
+      </div>
+      <div class="face back">
+        <span class="tag" id="btag"></span>
+        <div class="a" id="a"></div>
+        <div class="mem" id="mem" hidden></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button class="btn" id="prev" type="button">← ก่อนหน้า</button>
+    <button class="btn primary" id="flip" type="button">พลิก</button>
+    <button class="btn" id="next" type="button">ถัดไป →</button>
+  </div>
+  <div class="tools">
+    <button class="btn" id="shuffle" type="button">สุ่มลำดับ</button>
+    <button class="btn" id="reset" type="button">เรียงตามเดิม</button>
+  </div>
+  <footer>ใช้ปุ่มลูกศร ← → เพื่อเปลี่ยนการ์ด</footer>
+</div>
+
+<script>
+const S = {1:"ส่วนที่ 1 ประกันภัยทางทะเล",2:"ส่วนที่ 2 บุริมสิทธิทางทะเล",3:"ส่วนที่ 3 FAL",4:"ส่วนที่ 4 ผู้ลักลอบขึ้นเรือ",5:"ส่วนที่ 5 BWM Plan"};
+const CHIP = {0:"ทั้งหมด",1:"ประกันภัย",2:"บุริมสิทธิ",3:"FAL",4:"Stowaway",5:"BWM"};
+const cards = [
+ {s:1,q:"หลักส่วนได้เสีย (Insurable Interest) คืออะไร",a:["ทำประกันได้ ถ้าตอนทำสัญญา <b>คาดหมายได้</b> ว่าจะมีส่วนได้เสียในสินค้า","ต้องทำประกัน <b>ก่อน</b> เกิดเหตุ","ต้องมีส่วนได้เสีย <b>อย่างช้าที่สุด ณ เวลาเกิดวินาศภัย</b> จึงจะเคลมได้"]},
+ {s:1,q:"คำรับรอง (Warranty) คืออะไร",a:["คำมั่นของผู้เอาประกันว่าจะมีหรือไม่มีสิ่งใด","ใช้เพื่อให้กรมธรรม์ชัดเจน"]},
+ {s:1,q:"ผลของการฝ่าฝืนคำรับรอง (Warranty)",a:["ความรับผิดของผู้รับประกัน <b>หยุดชะงัก</b>","จะ <b>กลับมามีผล</b> เมื่อแก้ไขให้ถูกต้องแล้ว"]},
+ {s:1,q:"ICC (A) คุ้มครองอะไร และยกเว้นอะไรบ้าง",a:["All risks คุ้มครองทุกอย่าง ยกเว้น","ข้อ 4 ข้อยกเว้นทั่วไป (เช่น จงใจทำให้เสียหาย, หีบห่อไม่เหมาะสม)","ข้อ 5 เรือไม่พร้อมเดินทะเลอย่างปลอดภัย","ข้อ 6 ภัยสงคราม","ข้อ 7 นัดหยุดงานและจลาจล"],m:"4-5-6-7 = ทั่วไป · เรือไม่พร้อม · สงคราม · จลาจล"},
+ {s:1,q:"ICC (B) และ ICC (C) ต่างกันอย่างไร",a:["B = คุ้มครองภัยทั่วไป","C = คุ้มครองเฉพาะภัยร้ายแรงที่เกิดกับเรือ (คุ้มครองตัวสินค้า ไม่ได้คุ้มครองคน)"]},
+ {s:1,q:"สิ่งที่ ICC (B) คุ้มครอง แต่ ICC (C) ไม่คุ้มครอง",a:["แผ่นดินไหว","ภูเขาไฟระเบิด","ฟ้าผ่า","ของโดนน้ำซัดตกทะเล","น้ำเข้าสินค้า","ของเสียหายขณะขึ้นลงเรือ"],m:"ไหว · ไฟ · ฟ้า · ซัด · เข้า · หล่น"},
+ {s:1,q:"ถ้าต้องการความคุ้มครองภัยสงคราม ต้องทำอย่างไร",a:["โดยทั่วไป ICC ไม่คุ้มครองสงคราม","ต้องซื้อ <b>war risk extension</b> เพิ่ม"]},
+ {s:2,q:"บุริมสิทธิทางทะเล คืออะไร",a:["สิทธิของเจ้าหนี้บางประเภทที่กฎหมายกำหนด ให้ได้รับชำระหนี้จาก <b>ตัวเรือ</b> ก่อนเจ้าหนี้รายอื่น","สิทธินี้ <b>ติดไปกับตัวเรือ</b> แม้เรือถูกขายหรือโอนแล้ว เจ้าหนี้ก็ยังบังคับเอากับเรือลำนั้นได้"]},
+ {s:2,q:"ลำดับบุริมสิทธิทางทะเล",a:["1. ค่าจ้างการทำงานบนเรือ","2. การเสียชีวิตและบาดเจ็บ","3. การช่วยเหลือกู้ภัย","4. มูลละเมิด"],m:"จ้าง → ตาย → กู้ → ละเมิด"},
+ {s:2,q:"ข้อยกเว้น: เมื่อใดบุริมสิทธิกู้ภัยแซงขึ้นมาก่อนได้ และเพราะอะไร",a:["เมื่อการกู้ภัยเกิด <b>หลัง</b> บุริมสิทธิค่าจ้างหรือการตาย/บาดเจ็บ","เหตุผล: การกู้ภัยทำให้เรือไม่จม บุริมสิทธิอื่นจึงยังอยู่ต่อได้"]},
+ {s:2,q:"ผลของการโอนเรือที่มีบุริมสิทธิติดอยู่",a:["บุริมสิทธิติดไปกับเรือ","ผู้ซื้อเรือมือสองจึงรับภาระนั้นมาด้วย"]},
+ {s:2,q:"บุริมสิทธิระงับเมื่อใด (3 กรณี)",a:["ผู้รับโอน <b>ประกาศโดยเปิดเผย</b> ให้เจ้าหนี้ยื่นคำเรียกร้อง แล้วพ้น <b>60 วัน</b> โดยไม่มีใครมายื่น","บุริมสิทธิเกิดขึ้นมาแล้ว <b>1 ปี</b> โดยไม่มีการดำเนินการใดๆ","เรือไม่มีอยู่แล้ว"],m:"60 วัน · 1 ปี · เรือไม่อยู่"},
+ {s:3,q:"FAL คืออะไร และแบ่งเป็นกี่กลุ่ม",a:["แบบฟอร์มมาตรฐานที่เรือต้องยื่นตอนเข้าออกท่า บอกว่าเรือคืออะไร มีของอะไร มีใครบ้าง","🚢 เรือ: FAL 1","📦 ของ (ศุลกากร): FAL 2, 3, 4, 7","👤 คน (ตรวจคนเข้าเมือง): FAL 5, 6"],m:"เรือ → สินค้า → เสบียง → ของลูกเรือ → ลูกเรือ → ผู้โดยสาร → ของอันตราย"},
+ {s:3,q:"FAL 1 General Declaration",a:["ข้อมูลพื้นฐานของเรือและเที่ยวเรือ ใช้ประกอบพิธีการเข้าออกท่า","เช่น ชื่อเรือ, ท่าเข้าออก, วันเวลา"]},
+ {s:3,q:"FAL 2 Cargo Declaration",a:["รายละเอียดสินค้าที่เรือบรรทุก ให้ศุลกากรควบคุม","เช่น เลขใบตราส่ง, จำนวนหีบห่อ, รายละเอียดสินค้า"]},
+ {s:3,q:"FAL 3 Ship's Stores Declaration",a:["ของใช้หรือของบริโภคบนเรือ ตรวจแยกจากสินค้าขนส่ง","เช่น เสบียง, เชื้อเพลิง, เครื่องดื่มแอลกอฮอล์"]},
+ {s:3,q:"FAL 4 Crew's Effects Declaration",a:["ของส่วนตัวของลูกเรือ สำแดงต่อศุลกากร","เช่น ชื่อ, ตำแหน่ง, รายการและปริมาณสิ่งของ"],m:"FAL 4 = ของลูกเรือ · FAL 5 = ตัวลูกเรือ"},
+ {s:3,q:"FAL 5 Crew List",a:["ตัวบุคคลและสถานะของลูกเรือ เพื่อตรวจคนเข้าเมือง","เช่น ชื่อ-สกุล, สัญชาติ, เอกสารประจำตัว"]},
+ {s:3,q:"FAL 6 Passenger List",a:["ข้อมูลผู้โดยสาร เพื่อตรวจคนเข้าเมือง","เช่น ชื่อ-สกุล, หนังสือเดินทาง, ท่าที่ขึ้นและลง"]},
+ {s:3,q:"FAL 7 Dangerous Goods Manifest",a:["รายละเอียดสินค้าอันตรายและตำแหน่งจัดเก็บ เพื่อควบคุมการขนถ่ายอย่างเหมาะสม","เช่น หมายเลข UN, ประเภทสินค้าอันตราย, ตำแหน่งจัดเก็บบนเรือ"]},
+ {s:4,q:"ขั้นตอนหลักเมื่อพบผู้ลักลอบขึ้นเรือ",a:["แจ้งนายเรือ","ดูแลเบื้องต้น","รวบรวมข้อเท็จจริง เอกสาร และเวลาที่พบ","บันทึกลงปูมพร้อมภาพถ่าย","ประสานผู้เกี่ยวข้อง","เตรียมท่าถัดไป"]},
+ {s:4,q:"กรณีพบผู้ลักลอบก่อนออกท่า",a:["แจ้งนายเรือ","ระงับตู้ที่พบผู้ลักลอบ","ตรวจพื้นที่","ประสานงาน"]},
+ {s:4,q:"กรณีพบผู้ลักลอบกลางทะเล",a:["ดูแลสุขภาพ","จัดเวรเฝ้า","ถามต้นทางและตัวตนโดยไม่คาดเดา","บันทึกและรายงาน","ประสานท่าถัดไป"],m:"ระงับตู้ = ก่อนออกท่า · จัดเวรเฝ้า = กลางทะเล"},
+ {s:4,q:"กรณีผู้ลักลอบขอลี้ภัย",a:["บันทึกคำร้องและดูแล","ประสานเจ้าของเรือและ P&I","แจ้งหน่วยงานที่เกี่ยวข้อง","<b>รักษาความลับ</b> และ <b>ไม่ส่งไปที่อันตราย</b>"]},
+ {s:4,q:"กรณีท่าปลายทางไม่พร้อมรับ",a:["แจ้งท่าปลายทางล่วงหน้า","รวบรวมและแยกแยะข้อมูล","ประสานรัฐเจ้าของเรือ ตัวแทน และ P&I","ดูแลระหว่างรอและเก็บหลักฐาน"]},
+ {s:4,q:"กรณีผู้ลักลอบป่วยหนักหรือเสี่ยงหลบหนี",a:["ประเมินอาการและขอคำแนะนำ","เฝ้าตามระดับความเสี่ยง","ประสานท่าและหน่วยแพทย์","บันทึกอาการ"]},
+ {s:5,q:"ความหมายของ Ballast Water Management Plan",a:["เอกสารประจำเรือที่กำหนดขั้นตอนจัดการน้ำอับเฉาและตะกอน ให้เป็นไปตามอนุสัญญา (BWM Convention 2004)"]},
+ {s:5,q:"วัตถุประสงค์ของแผนจัดการน้ำอับเฉา",a:["ป้องกัน ลด และขจัดการถ่ายโอนสิ่งมีชีวิตที่เป็นอันตราย","คุ้มครองสิ่งแวดล้อมและความปลอดภัยของลูกเรือ"]},
+ {s:5,q:"ลักษณะของแผน และใครให้ความเห็นชอบ",a:["แผนทำ <b>เฉพาะเรือแต่ละลำ</b> เพราะขนาดและลักษณะเรือต่างกัน","จึงต้องได้รับความเห็นชอบจาก <b>ฝ่ายบริหารของรัฐเจ้าของธง</b>"]},
+ {s:5,q:"สาระสำคัญของแผน (7 อย่าง)",a:["ความปลอดภัย","วิธีจัดการน้ำอับเฉา","การจัดการตะกอน","การประสานงาน","ผู้รับผิดชอบ","การรายงาน","ภาษาที่ใช้ในแผน"],m:"ปลอดภัย · วิธี · ตะกอน · ประสาน · คน · รายงาน · ภาษา"},
+ {s:5,q:"ตัวอย่างขั้นตอนหรือมาตรการในแผน",a:["ตรวจคุณภาพน้ำก่อนรับน้ำ","บำบัดและระบายน้ำตามคู่มือ โดยเฝ้าระวังการทรงตัวของเรือ","จัดการตะกอนสะสม","แจ้งผู้รับผิดชอบเมื่อมีเหตุขัดข้อง"]}
+];
+
+let filter = 0, order = [], i = 0, flipped = false;
+const $ = id => document.getElementById(id);
+const card = $("card");
+
+function build(shuffle){
+  order = cards.map((c,k)=>k).filter(k => !filter || cards[k].s === filter);
+  if (shuffle) for (let k=order.length-1;k>0;k--){const r=Math.floor(Math.random()*(k+1));[order[k],order[r]]=[order[r],order[k]];}
+  i = 0; render();
+}
+function render(){
+  const c = cards[order[i]];
+  setFlip(false);
+  $("q").textContent = c.q;
+  $("ftag").textContent = $("btag").textContent = S[c.s];
+  $("a").innerHTML = c.a.length === 1 ? `<p style="margin:0">${c.a[0]}</p>` : "<ul>" + c.a.map(x=>`<li>${x}</li>`).join("") + "</ul>";
+  $("mem").hidden = !c.m; $("mem").textContent = c.m ? "🧠 " + c.m : "";
+  $("count").textContent = `การ์ด ${i+1} / ${order.length}`;
+  $("section").textContent = CHIP[filter];
+  $("progress").style.width = ((i+1)/order.length*100) + "%";
+  $("prev").disabled = i === 0;
+  $("next").disabled = i === order.length - 1;
+}
+function setFlip(v){ flipped = v; card.classList.toggle("flipped", v); $("flip").textContent = v ? "ดูคำถาม" : "พลิก"; }
+function go(d){ const n = i + d; if (n>=0 && n<order.length){ i = n; render(); } }
+
+const chips = $("chips");
+Object.keys(CHIP).forEach(k=>{
+  const b = document.createElement("button");
+  b.className = "chip"; b.type = "button"; b.id = "chip-"+k; b.textContent = CHIP[k];
+  b.setAttribute("aria-pressed", String(+k === filter));
+  b.onclick = () => { filter = +k; chips.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed", String(x===b))); build(false); };
+  chips.appendChild(b);
+});
+card.onclick = () => setFlip(!flipped);
+$("flip").onclick = () => setFlip(!flipped);
+$("prev").onclick = () => go(-1);
+$("next").onclick = () => go(1);
+$("shuffle").onclick = () => build(true);
+$("reset").onclick = () => build(false);
+document.addEventListener("keydown", e=>{
+  if (e.target.tagName === "BUTTON" && e.target !== card && (e.key===" "||e.key==="Enter")) return;
+  if (e.key==="ArrowRight") go(1);
+  else if (e.key==="ArrowLeft") go(-1);
+  else if (e.key===" "||e.key==="Enter"){ e.preventDefault(); setFlip(!flipped); }
+});
+build(false);
+</script>
+
+</body></html>
